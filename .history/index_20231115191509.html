@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .input {
+        display: flex;
+      }
+
+      .display .item {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pung-game">
+      <div class="input">
+        <div class="name">
+          <input type="text" name="" id="" placeholder="타이머 이름 입력" />
+        </div>
+        <div class="btns">
+          <input type="button" value="5초" />
+          <input type="button" value="10초" />
+          <input type="button" value="20초" />
+        </div>
+      </div>
+      <div class="summary">총: 0건 평균 남은시간: 0.0 초</div>
+      <div class="control">
+        <input type="button" value="초기화" />
+        <input type="button" value="x2" />
+        <input type="button" value="전체+5" />
+        <input type="button" value="전체 중지" />
+        <input type="button" value="전체 시작" />
+      </div>
+      <ul class="display">
+        <li class="item">
+          <div class="name"></div>
+          <div class="left-time"></div>
+          <div class="sub-control">
+            <input type="button" value="" class="reset" />
+            <input type="button" value="" class="multiple" />
+            <input type="button" value="" class="add" />
+            <input type="button" value="" class="all-stop" />
+            <input type="button" value="" class="all-start" />
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
